@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme color" content="#00897B">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="shortcut icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="/css/materialize.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<title>Lokawisata - Travel And Explore Indonesia</title>
+</head>
+<body>
+	<!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+
+	<header>
+		<nav class="hide-on-large-only transparent">
+			<div class="nav-wrapper">
+				<a href="#home" class="brand-logo"><span></span></a>
+				<a href="#" data-target="nav" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+			</div>
+		</nav>
+	
+		<ul class="sidenav sidenav-fixed" id="nav">
+			<li>
+				<a href="#home" class="fit-content center">
+					<img src="/img/logo.png" alt="Lokawisata">
+				</a>
+			</li>
+			<div class="divider"></div>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#tourist-attraction">Tourist Attraction</a></li>
+			<li><a href="#amusement-park">Amusement Park</a></li>
+			<li><a href="#religious-tourism">Religious Tourism</a></li>
+			<div class="divider"></div>
+			<li><a href="#contact">Contact Us</a></li>
+		</ul>
+	</header>
+
+	<div class="divider"></div>
+
+	<main id="main-content"></main>
+
+
+	<script src="/js/materialize.min.js"></script>
+	<script src="/js/script.js"></script>
+	<script>
+		// REGISTER SERVICE WORKER
+		if('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+				navigator.serviceWorker
+					.register('/service-worker.js')
+					.then(function() {
+						console.log('Pendaftaran Serviceworker berhasil');
+					})
+					.catch(function() {
+						console.log('Pendaftaran Serviceworker gagal');
+					});
+			});
+		} else {
+			console.log('Serviceworker belum didukung browser ini.');
+		}
+</script>
+</body>
+</html>

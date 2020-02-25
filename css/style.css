@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('/webfont/MaterialIcons-Regular.woff2') format('woff2')
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+header, main, footer {
+	padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+	header, main, footer {
+		padding-left: 0;
+	}
+}
+
+.p1 {
+	padding: 0.75rem !important;
+}
+.p2 {
+	padding: 1.5rem !important;
+}
+.p3 {
+	padding: 2.5rem !important;
+}
+.fit-content {
+	height: fit-content !important;
+}
+.justify-align {
+	text-align: justify;
+}
+
+.banner {
+	width: 100%;
+	max-width: 300px;
+}
+.custom-title {
+	font-size: 3rem;
+	margin: 1rem;
+}
+.brand-logo span {
+	display: block;
+	width: 95px;
+	height: 60px;
+	background-image: url(/img/logo.png);
+	background-size: cover;
+	background-position: 0px -15px;
+}
